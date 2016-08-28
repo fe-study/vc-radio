@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./static/css/bootstrap.min.css">
+<title>vc-radio - demo</title>
+<style>
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        background: rgba(119, 129, 149, 0.8);
+    }
+    .container {
+        width: 369px;
+        padding: 20px;
+    }
+    .container label {
+        font-weight: normal;
+    }
+    .container .btn {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <h1 align="center">@Vue Component - vc-radio</h1>
+    <div class="text-center">对原生radio的封装，可以伪装成button外形, 也可以搭配容器组件<a href="https://github.com/iwaimai-bi-fe/vc-buttonGroup">vc-buttonGroup</a></div>
+    <a style="display: block" class="text-center" href="https://github.com/iwaimai-bi-fe/vc-radio">view on Github</a>
+    <hr>
+
+    <div id="app" class="container">
+
+        <button class="btn btn-warning btn-sm" @click="nativeFn">原生外形</button>
+        <button class="btn btn-danger btn-sm" @click="buttonFn">按钮外形</button>
+        <button class="btn btn-primary btn-sm" @click="disabledFn">disabled</button>
+        <button class="btn btn-info btn-sm" @click="readonlyFn">readonly</button>
+
+        <hr>
+
+        <vc-radio
+            :label="label"
+            :checked.sync="checked"
+            :value="value"
+            :button="button"
+            :status="status"
+            :disabled="disabled"
+            :readonly="readonly"
+        >
+            选择1
+        </vc-radio>(slot)
+
+        <vc-radio
+            :label="label"
+            :checked.sync="checked"
+            :value="value"
+            :button="button"
+            :status="status"
+            :disabled="disabled"
+            :readonly="readonly"
+        >
+        </vc-radio>(no slot, use label)
+
+        <div class="form-group">
+            <div>checked - (默认: false)</div>
+            <label><input type="radio" :value="bools.true" name="checked" v-model="checked">是</label>
+            <label><input type="radio" :value="bools.false" name="checked" v-model="checked">否</label>
+        </div>
+
+        <div class="form-group">
+            <div>disabled - (默认: false)</div>
+            <label><input type="radio" :value="bools.true" name="disabled" v-model="disabled">是</label>
+            <label><input type="radio" :value="bools.false" name="disabled" v-model="disabled">否</label>
+        </div>
+
+        <div class="form-group">
+            <div>readonly - (默认: false)</div>
+            <label><input type="radio" :value="bools.true" name="readonly" v-model="readonly">是</label>
+            <label><input type="radio" :value="bools.false" name="readonly" v-model="readonly">否</label>
+        </div>
+
+        <div class="form-group">
+            <label>配置组件的label属性</label>
+            <input type="text" class="form-control" placeholder="label" v-model="label" />
+        </div>
+
+        <div class="form-group">
+            <div>配置组件的status</div>
+            <label><input type="radio" value="default" name="status" v-model="status">default</label>
+            <label><input type="radio" value="warning" name="status" v-model="status">warning</label>
+            <label><input type="radio" value="danger" name="status" v-model="status">danger</label>
+            <label><input type="radio" value="info" name="status" v-model="status">info</label>
+            <label><input type="radio" value="primary" name="status" v-model="status">primary</label>
+        </div>
+
+        <div class="form-group">
+            <label>配置组件的value(sync)</label>
+            <input type="text" class="form-control" placeholder="value" v-model="value">
+        </div>
+
+        <div class="form-group">
+            <div>button - (默认: false)</div>
+            <label><input type="radio" :value="bools.true" name="button" v-model="button">是</label>
+            <label><input type="radio" :value="bools.false" name="button" v-model="button">否</label>
+        </div>
+
+    </div>
+    <script src='../dist/example.js'></script>
+</body>
+</html>
