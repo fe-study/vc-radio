@@ -12,7 +12,7 @@ new Vue({
             label: '选择2',
             value: true,
             button: true,
-            status: 'success',
+            type: 'success',
             checked: true,
             disabled: false,
             readonly: false
@@ -23,7 +23,7 @@ new Vue({
             this.button = false
             this.disabled = true
             this.readonly = true
-            this.status = 'warning' 
+            this.type = 'warning' 
             this.disabled = false
             this.readonly = false
         },
@@ -31,19 +31,19 @@ new Vue({
             this.button = true
             this.disabled = true
             this.readonly = true
-            this.status = 'danger'
+            this.type = 'danger'
             this.disabled = false
             this.readonly = false
         },
         disabledFn () {
             this.readonly = false
             this.disabled = true
-            this.status = 'primary'
+            this.type = 'primary'
         },
         readonlyFn () {
             this.disabled = false
             this.readonly = true
-            this.status = 'info'
+            this.type = 'info'
         }
     },
 	components: {

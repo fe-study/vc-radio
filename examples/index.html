@@ -29,7 +29,7 @@
 </head>
 <body>
     <h1 align="center">@Vue Component - vc-radio</h1>
-    <div class="text-center">对原生radio的封装，可以伪装成button外形, 也可以搭配容器组件<a href="https://github.com/iwaimai-bi-fe/vc-buttonGroup">vc-buttonGroup</a></div>
+    <div class="text-center">对原生radio的封装，可以伪装成button外形, 也可以搭配容器组件<a href="https://github.com/iwaimai-bi-fe/vc-buttonGroup">`vc-buttonGroup`</a>使用!</div>
     <a style="display: block" class="text-center" href="https://github.com/iwaimai-bi-fe/vc-radio">view on Github</a>
     <hr>
 
@@ -47,7 +47,7 @@
             :checked.sync="checked"
             :value="value"
             :button="button"
-            :status="status"
+            :type="type"
             :disabled="disabled"
             :readonly="readonly"
         >
@@ -59,7 +59,7 @@
             :checked.sync="checked"
             :value="value"
             :button="button"
-            :status="status"
+            :type="type"
             :disabled="disabled"
             :readonly="readonly"
         >
@@ -89,12 +89,12 @@
         </div>
 
         <div class="form-group">
-            <div>配置组件的status</div>
-            <label><input type="radio" value="default" name="status" v-model="status">default</label>
-            <label><input type="radio" value="warning" name="status" v-model="status">warning</label>
-            <label><input type="radio" value="danger" name="status" v-model="status">danger</label>
-            <label><input type="radio" value="info" name="status" v-model="status">info</label>
-            <label><input type="radio" value="primary" name="status" v-model="status">primary</label>
+            <div>配置组件的type</div>
+            <label><input type="radio" value="default" name="type" v-model="type">default</label>
+            <label><input type="radio" value="warning" name="type" v-model="type">warning</label>
+            <label><input type="radio" value="danger" name="type" v-model="type">danger</label>
+            <label><input type="radio" value="info" name="type" v-model="type">info</label>
+            <label><input type="radio" value="primary" name="type" v-model="type">primary</label>
         </div>
 
         <div class="form-group">

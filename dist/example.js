@@ -11107,7 +11107,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 
 
 			// module
-			exports.push([module.i, ".vc-radio-component {\n  display: inline-block;\n}\n.radio {\n  position: relative;\n}\n.radio > label > input {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  opacity: 0;\n  z-index: -1;\n  box-sizing: border-box;\n}\n.radio > label > .icon {\n  position: absolute;\n  top: .15rem;\n  left: 0;\n  display: block;\n  width: 1.4rem;\n  height: 1.4rem;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: .7rem;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n.radio:not(.active) > label > .icon {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\n.radio > label > input:focus ~ .icon {\n  outline: 0;\n  border: 1px solid #66afe9;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);\n}\n.radio.active > label > .icon {\n  background-size: 1rem 1rem;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);\n}\n.radio.active .btn-default {\n  -webkit-filter: brightness(75%);\n          filter: brightness(75%);\n}\n.radio.disabled > label > .icon,\n.radio.readonly > label > .icon,\n.btn.readonly {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=radio] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n", ""]);
+			exports.push([module.i, ".vc-radio-component {\n  display: inline-block;\n}\n.radio {\n  position: relative;\n}\n.radio > label > input {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  opacity: 0;\n  z-index: -1;\n  box-sizing: border-box;\n}\n.radio > label > .icon {\n  position: absolute;\n  top: 1.5px;\n  left: 0;\n  display: block;\n  width: 14px;\n  height: 14px;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: 7px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n.radio:not(.active) > label > .icon {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\n.radio > label > input:focus ~ .icon {\n  outline: 0;\n  border: 1px solid #66afe9;\n  /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); */\n}\n.radio.active > label > .icon {\n  background-size: 10px 10px;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);\n}\n.radio.active .btn-default {\n  -webkit-filter: brightness(75%);\n          filter: brightness(75%);\n}\n.radio.disabled > label > .icon,\n.radio.readonly > label > .icon,\n.btn.readonly {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=radio] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n", ""]);
 
 			// exports
 
@@ -11171,7 +11171,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 		/* 6 */
 		/***/function (module, exports) {
 
-			module.exports = "<!-- thanks for https://github.com/yuche/vue-strap/blob/master/src/Radio.vue -->\n    <div class=\"vc-radio-component\">\n        <label\n            v-if=\"buttonStyle\"\n            :class=\"['btn btn-' + color, { 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                v-show=\"!readonly\"\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <slot>{{ label }}</slot>\n        </label>\n        <div v-else\n            :class=\"['radio', color,{ 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <label class=\"open\">\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <span class=\"icon dropdown-toggle\" :class=\"[active ? 'btn-' + color : '', { 'bg': color === 'default' }]\"></span>\n            <span v-if=\"active && color === 'default'\" class=\"icon\"></span>\n            <slot>{{ label }}</slot>\n            </label>\n        </div>\n    </div>";
+			module.exports = "<!-- thanks for https://github.com/yuche/vue-strap/blob/master/src/Radio.vue -->\n    <div class=\"vc-radio-component\">\n        <label\n            v-if=\"buttonStyle\"\n            :class=\"['btn btn-' + typeColor, { 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                v-show=\"!readonly\"\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <slot>{{ label }}</slot>\n        </label>\n        <div v-else\n            :class=\"['radio', typeColor,{ 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <label class=\"open\">\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <span class=\"icon dropdown-toggle\" :class=\"[active ? 'btn-' + typeColor : '', { 'bg': typeColor === 'default' }]\"></span>\n            <span v-if=\"active && typeColor === 'default'\" class=\"icon\"></span>\n            <slot>{{ label }}</slot>\n            </label>\n        </div>\n    </div>";
 
 			/***/
 		},
@@ -11189,7 +11189,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 			//     <div class="vc-radio-component">
 			//         <label
 			//             v-if="buttonStyle"
-			//             :class="['btn btn-' + color, { 'active': active, 'disabled': disabled, 'readonly': readonly }]"
+			//             :class="['btn btn-' + typeColor, { 'active': active, 'disabled': disabled, 'readonly': readonly }]"
 			//             @click.prevent="toggle"
 			//         >
 			//             <input type="radio" autocomplete="off"
@@ -11204,7 +11204,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 			//             <slot>{{ label }}</slot>
 			//         </label>
 			//         <div v-else
-			//             :class="['radio', color,{ 'active': active, 'disabled': disabled, 'readonly': readonly }]"
+			//             :class="['radio', typeColor,{ 'active': active, 'disabled': disabled, 'readonly': readonly }]"
 			//             @click.prevent="toggle"
 			//         >
 			//             <label class="open">
@@ -11216,8 +11216,8 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 			//                 :disabled="disabled"
 			//                 :readonly="readonly"
 			//             />
-			//             <span class="icon dropdown-toggle" :class="[active ? 'btn-' + color : '', { 'bg': color === 'default' }]"></span>
-			//             <span v-if="active && color === 'default'" class="icon"></span>
+			//             <span class="icon dropdown-toggle" :class="[active ? 'btn-' + typeColor : '', { 'bg': typeColor === 'default' }]"></span>
+			//             <span v-if="active && typeColor === 'default'" class="icon"></span>
 			//             <slot>{{ label }}</slot>
 			//             </label>
 			//         </div>
@@ -11250,7 +11250,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 						type: Boolean,
 						default: false
 					},
-					status: {
+					type: {
 						type: String,
 						default: null
 					}
@@ -11265,8 +11265,8 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 					group: function group() {
 						return this.$parent && this.$parent._radioGroup;
 					},
-					color: function color() {
-						return this.status || this.$parent && this.$parent.status || 'default';
+					typeColor: function typeColor() {
+						return this.type || this.$parent && this.$parent.type || 'default';
 					}
 				},
 				created: function created() {
@@ -11321,14 +11321,14 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 			// }
 			// .radio > label > .icon {
 			//     position: absolute;
-			//     top: .15rem;
+			//     top: 1.5px;
 			//     left: 0;
 			//     display: block;
-			//     width: 1.4rem;
-			//     height: 1.4rem;
+			//     width: 14px;
+			//     height: 14px;
 			//     text-align: center;
 			//     user-select: none;
-			//     border-radius: .7rem;
+			//     border-radius: 7px;
 			//     background-repeat: no-repeat;
 			//     background-position: center center;
 			//     background-size: 50% 50%;
@@ -11340,10 +11340,10 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 			// .radio > label > input:focus ~ .icon {
 			//     outline: 0;
 			//     border: 1px solid #66afe9;
-			//     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+			//     /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); */
 			// }
 			// .radio.active > label > .icon {
-			//     background-size: 1rem 1rem;
+			//     background-size: 10px 10px;
 			//     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
 			// }
 			// .radio.active .btn-default { filter: brightness(75%); }
@@ -12419,7 +12419,7 @@ new _vue2.default({
             label: '选择2',
             value: true,
             button: true,
-            status: 'success',
+            type: 'success',
             checked: true,
             disabled: false,
             readonly: false
@@ -12431,7 +12431,7 @@ new _vue2.default({
             this.button = false;
             this.disabled = true;
             this.readonly = true;
-            this.status = 'warning';
+            this.type = 'warning';
             this.disabled = false;
             this.readonly = false;
         },
@@ -12439,19 +12439,19 @@ new _vue2.default({
             this.button = true;
             this.disabled = true;
             this.readonly = true;
-            this.status = 'danger';
+            this.type = 'danger';
             this.disabled = false;
             this.readonly = false;
         },
         disabledFn: function disabledFn() {
             this.readonly = false;
             this.disabled = true;
-            this.status = 'primary';
+            this.type = 'primary';
         },
         readonlyFn: function readonlyFn() {
             this.disabled = false;
             this.readonly = true;
-            this.status = 'info';
+            this.type = 'info';
         }
     },
     components: {
