@@ -89,12 +89,12 @@ if (false) {
 var hotAPI = require("vue-hot-reload-api")
 hotAPI.install(require("vue"))
 if (!hotAPI.compatible) return
-var id = "-!babel!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./Radio.vue"
+var id = "-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./Radio.vue"
 hotAPI.createRecord(id, module.exports)
-module.hot.accept(["-!babel!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./Radio.vue","-!vue-html-loader!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./Radio.vue"], function () {
-var newOptions = require("-!babel!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./Radio.vue")
+module.hot.accept(["-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./Radio.vue","-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./Radio.vue"], function () {
+var newOptions = require("-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./Radio.vue")
 if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-var newTemplate = require("-!vue-html-loader!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./Radio.vue")
+var newTemplate = require("-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./Radio.vue")
 hotAPI.update(id, newOptions, newTemplate)
 })
 })()
@@ -368,8 +368,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/.0.21.0@css-loader/index.js!./../../../node_modules/.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-ac781faa&file=Radio.vue!./../../../node_modules/.2.2.3@less-loader/index.js!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./Radio.vue", function() {
-			var newContent = require("!!./../../../node_modules/.0.21.0@css-loader/index.js!./../../../node_modules/.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-ac781faa&file=Radio.vue!./../../../node_modules/.2.2.3@less-loader/index.js!./../../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./Radio.vue");
+		module.hot.accept("!!./../../node_modules/.0.21.0@css-loader/index.js!./../../node_modules/.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-47d842a2&file=Radio.vue!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./Radio.vue", function() {
+			var newContent = require("!!./../../node_modules/.0.21.0@css-loader/index.js!./../../node_modules/.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-47d842a2&file=Radio.vue!./../../node_modules/.2.2.3@less-loader/index.js!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./Radio.vue");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -387,7 +387,7 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
-exports.push([module.i, ".vc-radio-component {\n  display: inline-block;\n}\n.radio {\n  position: relative;\n}\n.radio > label > input {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  opacity: 0;\n  z-index: -1;\n  box-sizing: border-box;\n}\n.radio > label > .icon {\n  position: absolute;\n  top: 1.5px;\n  left: 0;\n  display: block;\n  width: 14px;\n  height: 14px;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: 7px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n.radio:not(.active) > label > .icon {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\n.radio > label > input:focus ~ .icon {\n  outline: 0;\n  border: 1px solid #66afe9;\n  /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); */\n}\n.radio.active > label > .icon {\n  background-size: 10px 10px;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);\n}\n.radio.active .btn-default {\n  -webkit-filter: brightness(75%);\n          filter: brightness(75%);\n}\n.radio.disabled > label > .icon,\n.radio.readonly > label > .icon,\n.btn.readonly {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=radio] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n", ""]);
+exports.push([module.i, ".vc-radio-component {\n  display: inline-block;\n}\n.vc-radio-component .radio {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n.vc-radio-component.group-item {\n  float: left;\n}\n.vc-radio-component .open {\n  margin-right: 5px;\n  height: 20px;\n  line-height: 20px;\n}\n.vc-radio-component span.label-content {\n  display: inline-block;\n  position: relative;\n  top: -1px;\n  left: -3px;\n  height: 20px;\n  line-height: 20px;\n  font-size: 14px;\n  vertical-align: baseline;\n}\n.radio {\n  position: relative;\n}\n.radio > label > input {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  opacity: 0;\n  z-index: -1;\n  box-sizing: border-box;\n}\n.radio > label > .icon {\n  position: absolute;\n  top: 1.5px;\n  left: 0;\n  display: block;\n  width: 14px;\n  height: 14px;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: 7px;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n.radio:not(.active) > label > .icon {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\n.radio > label > input:focus ~ .icon {\n  outline: 0;\n  /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); */\n}\n.radio.active > label > .icon {\n  background-size: 10px 10px;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);\n}\n.radio.active .btn-default {\n  -webkit-filter: brightness(75%);\n          filter: brightness(75%);\n}\n.radio.disabled > label > .icon,\n.radio.readonly > label > .icon,\n.btn.readonly {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=radio] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n", ""]);
 
 // exports
 
@@ -452,7 +452,7 @@ module.exports = function() {
 /* 6 */
 /***/ function(module, exports) {
 
-module.exports = "<!-- thanks for https://github.com/yuche/vue-strap/blob/master/src/Radio.vue -->\n    <div class=\"vc-radio-component\">\n        <label\n            v-if=\"buttonStyle\"\n            :class=\"['btn btn-' + typeColor, { 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                v-show=\"!readonly\"\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <slot>{{ label }}</slot>\n        </label>\n        <div v-else\n            :class=\"['radio', typeColor,{ 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <label class=\"open\">\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <span class=\"icon dropdown-toggle\" :class=\"[active ? 'btn-' + typeColor : '', { 'bg': typeColor === 'default' }]\"></span>\n            <span v-if=\"active && typeColor === 'default'\" class=\"icon\"></span>\n            <slot>{{ label }}</slot>\n            </label>\n        </div>\n    </div>";
+module.exports = "<!-- thanks for https://github.com/yuche/vue-strap/blob/master/src/Radio.vue -->\n    <div class=\"vc-radio-component\" :class=\"{ 'group-item': group }\">\n        <label\n            v-if=\"buttonStyle\"\n            :class=\"['btn', 'btn-' + typeColor, { 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                v-show=\"!readonly\"\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <slot>{{ label }}</slot>\n        </label>\n        <div v-else\n            :class=\"['radio', typeColor,{ 'active': active, 'disabled': disabled, 'readonly': readonly }]\"\n            @click.prevent=\"toggle\"\n        >\n            <label class=\"open\">\n            <input type=\"radio\" autocomplete=\"off\"\n                v-el:input\n                :name=\"name\"\n                :value=\"value\"\n                :checked=\"active\"\n                :disabled=\"disabled\"\n                :readonly=\"readonly\"\n            />\n            <span class=\"icon dropdown-toggle\" :class=\"[ active ? 'btn-' + typeColor : '', { 'bg': typeColor === 'default' }]\"></span>\n            <span v-if=\"active && typeColor === 'default'\" class=\"icon\"></span>\n            <span class=\"label-content\"><slot>{{ label }}</slot></span>\n            </label>\n        </div>\n    </div>";
 
 /***/ },
 /* 7 */
@@ -466,10 +466,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 // <template>
 //     <!-- thanks for https://github.com/yuche/vue-strap/blob/master/src/Radio.vue -->
-//     <div class="vc-radio-component">
+//     <div class="vc-radio-component" :class="{ 'group-item': group }">
 //         <label
 //             v-if="buttonStyle"
-//             :class="['btn btn-' + typeColor, { 'active': active, 'disabled': disabled, 'readonly': readonly }]"
+//             :class="['btn', 'btn-' + typeColor, { 'active': active, 'disabled': disabled, 'readonly': readonly }]"
 //             @click.prevent="toggle"
 //         >
 //             <input type="radio" autocomplete="off"
@@ -496,99 +496,44 @@ Object.defineProperty(exports, "__esModule", {
 //                 :disabled="disabled"
 //                 :readonly="readonly"
 //             />
-//             <span class="icon dropdown-toggle" :class="[active ? 'btn-' + typeColor : '', { 'bg': typeColor === 'default' }]"></span>
+//             <span class="icon dropdown-toggle" :class="[ active ? 'btn-' + typeColor : '', { 'bg': typeColor === 'default' }]"></span>
 //             <span v-if="active && typeColor === 'default'" class="icon"></span>
-//             <slot>{{ label }}</slot>
+//             <span class="label-content"><slot>{{ label }}</slot></span>
 //             </label>
 //         </div>
 //     </div>
 // </template>
 
-// <script>
-exports.default = {
-    props: {
-        label: String,
-        value: {
-            default: true
-        },
-        checked: {
-            twoWay: true
-        },
-        button: {
-            type: Boolean,
-            default: false
-        },
-        disabled: {
-            type: Boolean,
-            default: false
-        },
-        name: {
-            type: String,
-            default: null
-        },
-        readonly: {
-            type: Boolean,
-            default: false
-        },
-        type: {
-            type: String,
-            default: null
-        }
-    },
-    computed: {
-        active: function active() {
-            return this.group ? this.$parent.value === this.value : this.value === this.checked;
-        },
-        buttonStyle: function buttonStyle() {
-            return this.button || this.group && this.$parent.buttons;
-        },
-        group: function group() {
-            return this.$parent && this.$parent._radioGroup;
-        },
-        typeColor: function typeColor() {
-            return this.type || this.$parent && this.$parent.type || 'default';
-        }
-    },
-    created: function created() {
-        var parent = this.$parent;
-        if (!parent) return;
-        if (parent._btnGroup && !parent._checkboxGroup) {
-            parent._radioGroup = true;
-        }
-    },
-    ready: function ready() {
-        if (!this.$parent._radioGroup) return;
-        if (this.$parent.value) {
-            this.checked = this.$parent.value === this.value;
-        } else if (this.checked) {
-            this.$parent.value = this.value;
-        }
-    },
-
-    methods: {
-        focus: function focus() {
-            this.$els.input.focus();
-        },
-        toggle: function toggle() {
-            if (this.disabled) {
-                return;
-            }
-            this.focus();
-            if (this.readonly) {
-                return;
-            }
-            this.checked = this.value;
-            if (this.group) {
-                this.$parent.value = this.value;
-            }
-        }
-    }
-};
-// </script>
-
 // <style>
 // .vc-radio-component {
 //     display: inline-block;
+
+//     & .radio {
+//         margin-top: 5px;
+//         margin-bottom: 5px;
+//     }
+
+//     &.group-item {
+//         float: left;
+//     }
+
+//     // 非group模式的重置margin
+//     .open {
+//         margin-right: 5px;
+//         height: 20px;
+//         line-height: 20px;
+//     }
+
+//     span.label-content {
+//         display: inline-block;
+//         position: relative;
+//         top: -1px;
+//         left: -3px;
+//         height: 20px;
+//         line-height: 20px;
+//         font-size: 14px;
+//         vertical-align: baseline;
+//     }
 // }
 // .radio { position: relative; }
 // .radio > label > input {
@@ -619,7 +564,7 @@ exports.default = {
 // }
 // .radio > label > input:focus ~ .icon {
 //     outline: 0;
-//     border: 1px solid #66afe9;
+//     // border: 1px solid #66afe9;
 //     /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); */
 // }
 // .radio.active > label > .icon {
@@ -640,6 +585,89 @@ exports.default = {
 //     pointer-events: none;
 // }
 // </style>
+
+// <script>
+exports.default = {
+    name: 'vc-radio',
+    props: {
+        name: {
+            type: String,
+            default: null
+        },
+        label: String,
+        type: {
+            type: String,
+            default: null
+        },
+        value: {
+            default: true
+        },
+        checked: {
+            twoWay: true
+        },
+        button: {
+            type: Boolean,
+            default: false
+        },
+        disabled: {
+            type: Boolean,
+            default: false
+        },
+        readonly: {
+            type: Boolean,
+            default: false
+        }
+    },
+    created: function created() {
+        // 设置相应的Radio模式
+        var parent = this.$parent;
+        if (!parent) return;
+        if (parent._btnGroup && !parent._checkboxGroup) {
+            parent._radioGroup = true;
+        }
+    },
+    ready: function ready() {
+        if (!this.$parent._radioGroup) return;
+
+        if (this.$parent.value) {
+            // 如果父组件有值，则checked相应值
+            this.checked = this.$parent.value === this.value;
+        } else if (this.checked) {
+            // 如果有checked，则设置父组件值
+            this.$parent.value = this.value;
+        }
+    },
+
+    computed: {
+        active: function active() {
+            return this.group ? this.$parent.value === this.value : this.value === this.checked;
+        },
+        buttonStyle: function buttonStyle() {
+            return this.button || this.group && this.$parent.buttons;
+        },
+        group: function group() {
+            return this.$parent && this.$parent._radioGroup;
+        },
+        typeColor: function typeColor() {
+            return this.type || this.$parent && this.$parent.type || 'default';
+        }
+    },
+    methods: {
+        focus: function focus() {
+            this.$els.input.focus();
+        },
+        toggle: function toggle() {
+            if (this.disabled) return;
+            this.focus();
+            if (this.readonly) return;
+            this.checked = this.value;
+            if (this.group) {
+                this.$parent.value = this.value;
+            }
+        }
+    }
+};
+// </script>
 
 /***/ },
 /* 8 */

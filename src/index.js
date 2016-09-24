@@ -1,3 +1,4 @@
-import vcRadio from './components/Radio'
+import vcRadio from './Radio'
 
-module.exports = vcRadio
+export default vcRadio
+export { vcRadio }

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import vcRadio from '../dist/build.js'
+import vcRadio from '../src'
 
 new Vue({
 	el: '#app',

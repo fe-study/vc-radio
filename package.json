@@ -1,7 +1,7 @@
 {
   "author": "indexxuan@gmail.com",
   "name": "vc-radio",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "wrapper of native radio component by vue.js & bootstrap",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --quiet",
